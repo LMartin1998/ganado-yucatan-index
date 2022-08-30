@@ -1,0 +1,29 @@
+@media (max-width: 900px)  {
+    .main-content p:first-child{
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .main-content h1{
+        font-size: 25px;
+        margin: -5px 0 1rem 0;
+    }
+    .p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .primary-button {
+        width: 80%;
+        font-size: 1rem;
+        margin: 1.5em;
+        padding: 1em 0.5em; 
+    }
+    .footer div{
+        width: 82px;
+    }
+    .footer div img {
+        width:  6rem;
+        bottom: 4rem;
+    }
+
+}
+

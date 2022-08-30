@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELQW6TZXEB"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ELQW6TZXEB');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/tablet.css">
+    <link rel="stylesheet" href="./assets/phone.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto+Slab:wght@300;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    
+
+    <title>Ganado Yucatán</title>
 </head>
 <body>
     <div class="page">
@@ -18,23 +34,38 @@
         <section class="container">
 
             <nav class="navbar">
+                <div class="mobile__back"> 
+                    <img class="hamburger_menu" src="https://img.icons8.com/color/48/000000/menu--v1.png"/>
+                </div>
+                <div class="mobile-menu__content hidden">
+                    <ul>
+                        <li><a href="/">Paquetes</a></li>
+                        <li><a href="/">Nosotros</a></li>
+                        <li><a href="/">Contacto</a></li>
+                        <li><a href="/">Noticias</a></li>
+                        <li><a href="/">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
                 <div class="navbar__content">
                     <img src="./assets/img/logo.png" alt="">
-                    <ul>
-                        <li><a href="">Paquetes</a></li>
-                        <li><a href="">Nosotros</a></li>
-                        <li><a href="">Contacto</a></li>
-                        <li><a href="">Iniciar sesión</a></li>
-                    </ul>
+                    <!-- <div class="navbar__menu"> -->
+                        <ul>
+                            <li><a href="">Paquetes</a></li>
+                            <li><a href="">Nosotros</a></li>
+                            <li><a href="">Contacto</a></li>
+                            <li><a href="">Iniciar sesión</a></li>
+                        </ul>
+                        <!-- <a class="toggle__menu">Menu</a>
+                    </div> -->
                 </div>
             </nav>
 
             <section class="main-content">
                 <p>Conoce la plataforma ganadera de la península</p>
                 <h1>Ganado Yucatán</h1>
-                <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis accusantium esse vitae enim! .</p>
-                <button class="primary-button">Publicar gratis</button>
-                <p>Si compras ganado <a href="#" id="style-2" data-replace="bienvenido"><span>click aquí</span></a></p>
+                <p class="p">Los beneficios de la tecnolgia, al servicio del negocio ganadero</p>
+                <button class="primary-button">Prueba gratis</button>
+                <!-- <p>Si compras ganado <a href="#" id="style-2" data-replace="bienvenido"><span>click aquí</span></a></p> -->
             </section>
 
             <section class="side-content">
@@ -61,6 +92,7 @@
             </section>
 
         </section>
+
         <!-- loader -->
         <section class="loader">
             <div></div>
@@ -68,10 +100,15 @@
             <div></div>
         </section>
         <!-- modal -->
-        <section class="modal hidden">
+        <section class="modal">
             <div class="modal__content">
-                <img class="modal__content--close" src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
-                <div class="modal__content--slider">
+                <div class="modal_close">
+                    <div>
+                        <img class="modal__content--close" src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                    </div>
+                    <h2>¡Oferta del mes!</h2>
+                </div>
+                <!-- <div class="modal__content--slider">
                     <input type="radio" name="slider-1" id="radio-1" checked>
                     <input type="radio" name="slider-1" id="radio-2">
                     <input type="radio" name="slider-1" id="radio-2"> 
@@ -87,6 +124,9 @@
                             <img src="" alt="">
                         </label>
                     </div>
+                </div> -->
+                <div class="modal__publicidad">
+                    <img src="./assets/img/basculas.jpeg" alt="" srcset="">
                 </div>
             </div>
         </section>
